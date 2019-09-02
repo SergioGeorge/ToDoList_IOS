@@ -14,6 +14,8 @@
 		FAC7F7F023180DFC000F9A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7F7EE23180DFC000F9A0F /* LaunchScreen.storyboard */; };
 		FAC7F7FB23180DFC000F9A0F /* ToDoList_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F7FA23180DFC000F9A0F /* ToDoList_appTests.swift */; };
 		FAC7F80623180DFC000F9A0F /* ToDoList_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F80523180DFC000F9A0F /* ToDoList_appUITests.swift */; };
+		FAC7F81423180FDC000F9A0F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F81323180FDC000F9A0F /* WelcomeViewController.swift */; };
+		FAC7F81623181871000F9A0F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F81523181871000F9A0F /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FAC7F80123180DFC000F9A0F /* ToDoList_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoList_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7F80523180DFC000F9A0F /* ToDoList_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_appUITests.swift; sourceTree = "<group>"; };
 		FAC7F80723180DFC000F9A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC7F81323180FDC000F9A0F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FAC7F81523181871000F9A0F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				FAC7F7E523180DFB000F9A0F /* AppDelegate.swift */,
 				FAC7F7E723180DFB000F9A0F /* ViewController.swift */,
 				FAC7F7E923180DFB000F9A0F /* Main.storyboard */,
+				FAC7F81323180FDC000F9A0F /* WelcomeViewController.swift */,
+				FAC7F81523181871000F9A0F /* ListTableViewController.swift */,
 				FAC7F7EC23180DFC000F9A0F /* Assets.xcassets */,
 				FAC7F7EE23180DFC000F9A0F /* LaunchScreen.storyboard */,
 				FAC7F7F123180DFC000F9A0F /* Info.plist */,
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC7F81423180FDC000F9A0F /* WelcomeViewController.swift in Sources */,
 				FAC7F7E823180DFB000F9A0F /* ViewController.swift in Sources */,
 				FAC7F7E623180DFB000F9A0F /* AppDelegate.swift in Sources */,
+				FAC7F81623181871000F9A0F /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
