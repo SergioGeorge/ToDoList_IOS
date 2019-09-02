@@ -19,10 +19,17 @@ class WelcomeViewController: UIViewController {
         var dummyVar = "Sergio"
         var nameOfClass = "Apps Moviles"
         
+        var itemsDatabase: ToDoItemDatabase = ToDoItemDatabase.getInstance()
+        
+        //print(itemsDatabase)
+        itemsDatabase.appendItem(it:ToDoItem(name: "Do Homework"))
+        print("\(itemsDatabase.description)  :)")
+        itemsDatabase.appendItem(it: ToDoItem(name: "Go to movies"))
+        print(itemsDatabase.description)
         
         lblUser.text = dummyVar
         lblClass.text = nameOfClass
-        print("Hola: \(dummyVar)")//n string, c string
+        //print("Hola: \(dummyVar)")//n string, c string
         
     }
     

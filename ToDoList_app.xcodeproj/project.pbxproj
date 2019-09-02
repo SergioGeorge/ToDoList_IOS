@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA8D057B231D580E009994B7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D057A231D580E009994B7 /* ToDoItem.swift */; };
+		FA8D057D231D59D8009994B7 /* ToDoItemDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */; };
 		FAC7F7E623180DFB000F9A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F7E523180DFB000F9A0F /* AppDelegate.swift */; };
 		FAC7F7E823180DFB000F9A0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F7E723180DFB000F9A0F /* ViewController.swift */; };
 		FAC7F7EB23180DFB000F9A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC7F7E923180DFB000F9A0F /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA8D057A231D580E009994B7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDatabase.swift; sourceTree = "<group>"; };
 		FAC7F7E223180DFB000F9A0F /* ToDoList_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7F7E523180DFB000F9A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC7F7E723180DFB000F9A0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				FAC7F7EC23180DFC000F9A0F /* Assets.xcassets */,
 				FAC7F7EE23180DFC000F9A0F /* LaunchScreen.storyboard */,
 				FAC7F7F123180DFC000F9A0F /* Info.plist */,
+				FA8D057A231D580E009994B7 /* ToDoItem.swift */,
+				FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */,
 			);
 			path = ToDoList_app;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 			files = (
 				FAC7F81423180FDC000F9A0F /* WelcomeViewController.swift in Sources */,
 				FAC7F7E823180DFB000F9A0F /* ViewController.swift in Sources */,
+				FA8D057B231D580E009994B7 /* ToDoItem.swift in Sources */,
 				FAC7F7E623180DFB000F9A0F /* AppDelegate.swift in Sources */,
 				FAC7F81623181871000F9A0F /* ListTableViewController.swift in Sources */,
+				FA8D057D231D59D8009994B7 /* ToDoItemDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

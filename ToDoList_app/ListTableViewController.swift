@@ -12,5 +12,6 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         print("Hola Tabla \(message)")
+        print(ToDoItemDatabase.getInstance().db)
     }
 }
