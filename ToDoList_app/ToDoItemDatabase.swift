@@ -12,6 +12,19 @@ class ToDoItemDatabase: CustomStringConvertible {
     private static var database: ToDoItemDatabase?
     //private var items: [ToDoItem]?
     
+    private var itemOnEdition: ToDoItem?
+    
+    public var itemToEdit: ToDoItem? {
+        get {
+            return itemOnEdition
+        }
+        set(p) {
+            itemOnEdition = p
+        }
+    }
+    
+    
+    
     init() {
         items = Array<ToDoItem>()
     }
