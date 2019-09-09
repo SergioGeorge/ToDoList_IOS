@@ -11,8 +11,28 @@ class ListTableViewController: UITableViewController {
     public var message: String = ""
     
     override func viewDidLoad() {
-        print("Hola Tabla \(message)")
-        print(ToDoItemDatabase.getInstance().db)
+        //print("Hola Tabla \(message)")
+        //print(ToDoItemDatabase.getInstance().db)
+        
+        navigationItem.leftBarButtonItem = editButtonItem//<-- Es un obj que existe dentro del TableViewController
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addItem))//target el obj donde esta el callback
+        //los selectores ejecutan funciones
+        
+    }
+    
+    @objc func addItem() -> Void {
+        performSegue(withIdentifier: "addTask", sender: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        //To do, renove to do item
+        print("Execute delete item")
+        ToDoItemDatabase.getInstance().removeItem(index: indexPath.row)
+        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,6 +49,10 @@ class ListTableViewController: UITableViewController {
         let it:ToDoItem = ToDoItemDatabase.getInstance().db[indexPath.item]
         
         cell.textLabel?.text = it.itemName
+        
+        if it.switchState == true {
+            cell.accessoryType = .checkmark
+        }
         
         return cell
     }

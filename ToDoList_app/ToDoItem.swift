@@ -22,6 +22,15 @@ class ToDoItem {
         
     }
     
+    public var switchState: Bool {
+        get {
+            return isDone
+        }
+        set(d) {
+            isDone = d
+        }
+    }
+    
     init(name: String) {
         self.name = name
         isDone = false

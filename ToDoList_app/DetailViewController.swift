@@ -14,7 +14,9 @@ public class DetailViewController: UIViewController {
     
     
     @IBAction func btnFinished(_ sender: Any) {
-        ToDoItemDatabase.getInstance().itemToEdit!.itemName = lblTask.text!
+        var it = ToDoItemDatabase.getInstance().itemToEdit!
+        it.itemName = lblTask.text!
+        it.switchState = switchIsDone.isOn
         navigationController?.popViewController(animated: true)
         
     }
@@ -24,5 +26,9 @@ public class DetailViewController: UIViewController {
         
         lblTask.text = it.itemName
         switchIsDone.setOn(false, animated: true)
+        
+        if it.switchState == true {
+            switchIsDone.setOn(true, animated: true)
+        }
     }
 }

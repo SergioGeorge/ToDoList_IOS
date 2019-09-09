@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA70CF2D23269B8E001202C6 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70CF2C23269B8E001202C6 /* AddTaskViewController.swift */; };
 		FA713338232153C40025661A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA713337232153C40025661A /* DetailViewController.swift */; };
 		FA8D057B231D580E009994B7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D057A231D580E009994B7 /* ToDoItem.swift */; };
 		FA8D057D231D59D8009994B7 /* ToDoItemDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA70CF2C23269B8E001202C6 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		FA713337232153C40025661A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA8D057A231D580E009994B7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDatabase.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				FA8D057A231D580E009994B7 /* ToDoItem.swift */,
 				FA8D057C231D59D8009994B7 /* ToDoItemDatabase.swift */,
 				FA713337232153C40025661A /* DetailViewController.swift */,
+				FA70CF2C23269B8E001202C6 /* AddTaskViewController.swift */,
 			);
 			path = ToDoList_app;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC7F81423180FDC000F9A0F /* WelcomeViewController.swift in Sources */,
+				FA70CF2D23269B8E001202C6 /* AddTaskViewController.swift in Sources */,
 				FAC7F7E823180DFB000F9A0F /* ViewController.swift in Sources */,
 				FA8D057B231D580E009994B7 /* ToDoItem.swift in Sources */,
 				FAC7F7E623180DFB000F9A0F /* AppDelegate.swift in Sources */,

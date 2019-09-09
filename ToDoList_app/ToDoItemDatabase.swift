@@ -45,6 +45,10 @@ class ToDoItemDatabase: CustomStringConvertible {
         items?.append(it)
     }
     
+    public func removeItem(index: Int) {
+        items?.remove(at: index)
+    }
+    
     public static func getInstance() -> ToDoItemDatabase {
         if(database == nil) {
             database = ToDoItemDatabase()
